@@ -1,0 +1,16 @@
+//
+//  App general
+//
+
+html,
+body {
+  background: $light;
+}
+
+html, .pure-g [class *= "pure-u"] {
+  color: $fontColor;
+  font-size: $fontSize;
+  font-family: $fontFamily1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

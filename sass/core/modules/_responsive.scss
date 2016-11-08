@@ -1,0 +1,21 @@
+//
+//  Responsive
+//
+
+$breakpoints: (
+    'mw': 1600px,
+    'sl': 1366px,
+    'xl': 1024px,
+    'lg': 800px,
+    'md': 660px,
+    'sm': 480px,
+    'xs': 360px
+);
+
+@mixin bp($id, $type: 'max-width', $epsilon: 0) {
+  @if map-has-key($breakpoints, $id) {
+    @media #{"screen and (" $type ": " map-get($breakpoints, $id) + $epsilon ")"} {
+      @content;
+    }
+  }
+}
