@@ -3,13 +3,11 @@
 //
 
 $breakpoints: (
-    'mw': 1600px,
-    'sl': 1366px,
+    'mw': 1200px,
     'xl': 1024px,
-    'lg': 800px,
-    'md': 660px,
-    'sm': 480px,
-    'xs': 360px
+    'md': 767px,
+    'sm': 540px,
+    'xs': 375px
 );
 
 @mixin bp($id, $type: 'max-width', $epsilon: 0) {
